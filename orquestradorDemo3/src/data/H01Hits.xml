@@ -3,8 +3,6 @@
     
     <usoVehiculo>02</usoVehiculo>
     
-    <tipoSiniestro>robo</tipoSiniestro>
-    
     <numeroPlaca>
         <id_numeroPlaca>MVV-19-08</id_numeroPlaca>
         <eventos_numeroPlaca>
@@ -20,11 +18,6 @@
         <eventos_numeroPlaca>
             <eventosReglasID_numeroPlaca>H01c</eventosReglasID_numeroPlaca>
             <eventosReglasTotales_numeroPlaca>6</eventosReglasTotales_numeroPlaca>
-        </eventos_numeroPlaca>
-
-        <eventos_numeroPlaca>
-            <eventosReglasID_numeroPlaca>H07</eventosReglasID_numeroPlaca>
-            <eventosReglasTotales_numeroPlaca>1</eventosReglasTotales_numeroPlaca>
         </eventos_numeroPlaca>
     </numeroPlaca>
     
@@ -43,11 +36,6 @@
         <eventos_numeroSerie>
             <eventosReglasID_numeroSerie>H01c</eventosReglasID_numeroSerie>
             <eventosReglasTotales_numeroSerie>10</eventosReglasTotales_numeroSerie>
-        </eventos_numeroSerie>
-
-        <eventos_numeroSerie>
-            <eventosReglasID_numeroSerie>H07</eventosReglasID_numeroSerie>
-            <eventosReglasTotales_numeroSerie>1</eventosReglasTotales_numeroSerie>
         </eventos_numeroSerie>
     </numeroSerie>
     

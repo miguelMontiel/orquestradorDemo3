@@ -44,9 +44,12 @@ public class OrquestradorDemo2
             jpanel.add(jlabel2);
             jpanel.add(jlabel3);
             jpanel.add(jlabel4);
+            
             jframe.add(jpanel);
 
             File file = new File(archivoSeleccionado);
+            
+            Boolean miSwitch = false;
 
             if(seleccionado == JFileChooser.APPROVE_OPTION)
             {
@@ -66,12 +69,16 @@ public class OrquestradorDemo2
                 System.out.println("Tipo de Vehiculo: " + siniestros.getTipoVehiculo());
                 System.out.println("Uso del Vehiculo: " + siniestros.getUsoVehiculo() + " - " + claveUsoVehiculo[siniestros.getUsoVehiculo()] + "\n");
         	}
+        	else
+        	{
+        		miSwitch = true;
+        	}
             
             for(NumeroPlaca numeroplaca : siniestros.getNumeroPlaca())
             {
                 for(EventosnumeroPlaca eventosnumeroplaca : numeroplaca.getEventos_numeroPlaca())
                 {
-                	if(eventosnumeroplaca.getEventosReglasTotales_numeroPlaca() > 4 && eventosnumeroplaca.getEventosReglasID_numeroPlaca().equals("H01") 
+                	if(!miSwitch && eventosnumeroplaca.getEventosReglasTotales_numeroPlaca() > 4 && eventosnumeroplaca.getEventosReglasID_numeroPlaca().equals("H01") 
                 			|| eventosnumeroplaca.getEventosReglasTotales_numeroPlaca() > 4 && eventosnumeroplaca.getEventosReglasID_numeroPlaca().equals("H01b")
                 			|| eventosnumeroplaca.getEventosReglasTotales_numeroPlaca() > 5 && eventosnumeroplaca.getEventosReglasID_numeroPlaca().equals("H01c"))
                 	{
